@@ -40,7 +40,7 @@ export default function Footer() {
         <a
           className='font-light hover:text-gray-100 active:text-gray-400'
           target='_blank'
-          href='https://treehacks-2024.devpost.com/'
+          href='https://devpost.com/software/good-life-farms'
           rel='noopener noreferrer'
         >
           <svg
