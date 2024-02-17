@@ -1,6 +1,8 @@
-## 2024-02-16
+## Who are we?
 
-Kathy, Tobi, and I met at 2024 TreeHacks.
+Kathy, Tobi, and I met at 2024 TreeHacks, and ...
+
+## 2024-02-16
 
 ```bash
 # Initialized our web app as a Next.js project.
