@@ -1,18 +1,17 @@
 ## Overview
 
-We're trying to make web apps for local farms, and to do so in a way that is self-sustainable -- minimal maintenance for those local farmers.
+> Quote from Dr. G
+ 
+We're trying to make self-sustainable web apps for local farms.
+At TreeHacks, we're making a prototype for Good Life Farms, but we hope to make it deployable by anyone who needs it, whether it be seniors, college students, or SWE's trying to have their own farm.
 
 ### Issue
 
-One of our bio professors, Dr. G has a farm, which she operates with her husband.
-The current issue is that platforms like Facebook Marketplace take too much of their time just for marketing.
+[Interview detail with Dr. G.]
 
-```
-For our challenge, we want to see the best prototype which addresses an issue someone on the team faces in a novel manner. We don’t care about slides or fancy presentations, we will be solely focussed on the coding prowess displayed and the ability of the prototype to solve the problem.
-Process:
-Idea: Choose an idea
-Build: Code!
-```
+[Current problem with existing technology.]
+
+[Specific needs local produces have and how our web app incorporates them]
 
 ## Getting Started
 
