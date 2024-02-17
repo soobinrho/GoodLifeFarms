@@ -32,6 +32,15 @@ export default function Footer() {
       >
         Soobin
       </a>
+      {' @ '}
+      <a
+        className='font-light hover:text-gray-100 active:text-gray-400'
+        target='_blank'
+        href='https://treehacks-2024.devpost.com/'
+        rel='noopener noreferrer'
+      >
+        2024 TreeHacks
+      </a>
       .
     </div>
   );
