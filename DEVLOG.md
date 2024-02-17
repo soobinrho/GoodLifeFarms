@@ -1,3 +1,6 @@
+<br>
+<br>
+
 ## Who are we?
 
 Kathy, Tobi, and I met at 2024 TreeHacks, and ...
@@ -19,3 +22,5 @@ pnpm create next-app good-life-farms
 # [1] https://tailwindui.com/components/marketing/sections/heroes
 # [2] https://colorhunt.co/palette/070f2b1b1a55535c919290c3
 ```
+
+<br>

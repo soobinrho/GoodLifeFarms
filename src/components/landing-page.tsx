@@ -50,18 +50,20 @@ export default function LandingPage() {
                   >
                     Prototype
                   </Link>
-                  <Link
+                  <a
                     className='inline-flex items-center justify-center rounded-md bg-slate-800 px-4 py-2 text-lg font-medium text-cyan-600 drop-shadow-[0_8px_8px_rgba(0,0,0,1)] transition-colors hover:bg-gray-300 hover:text-primary-3 hover:drop-shadow-2xl focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50'
-                    href='#'
+                    target='_blank'
+                    href='https://github.com/soobinrho/good-life-farms/blob/main/DEVLOG.md#who-are-we'
+                    rel='noopener noreferrer'
                   >
                     Who are we?
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
             <img
               alt='Produces from Good Life Farms. '
-              className='mx-auto aspect-[3/1] overflow-hidden rounded-xl object-cover drop-shadow-[0_8px_8px_rgba(0,0,0,1)]'
+              className='mx-auto aspect-[3/1] max-w-[90vw] overflow-hidden rounded-xl object-cover drop-shadow-[0_8px_8px_rgba(0,0,0,1)] sm:max-w-[65vw]'
               height='300'
               src='/farm-produces.jpg'
               width='1270'
