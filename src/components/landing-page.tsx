@@ -11,9 +11,9 @@ export default function LandingPage() {
         {/* Who we are */}
         <section className='absolute left-[50%] top-[50%] z-10 translate-x-[-50%] translate-y-[-50%]'>
           <div className='container w-screen space-y-10 xl:space-y-16'>
-            <div className='grid gap-4 px-10 md:grid-cols-2 md:gap-16'>
+            <div className='grid place-items-center gap-4 px-10 md:grid-cols-2 md:gap-16'>
               <div>
-                <h1 className=' lg:leading-tighter text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]'>
+                <h1 className='lg:leading-tighter text-start text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]'>
                   Self-sustainable web app for{' '}
                   <TypeAnimation
                     className='text-primary/80 drop-shadow-[0_8px_8px_rgba(0,0,0,1)]'
