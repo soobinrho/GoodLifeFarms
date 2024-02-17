@@ -36,7 +36,7 @@ export default function Footer() {
         .
       </div>
 
-      <div className='absolute bottom-0 right-0 my-4 mr-4 font-extralight'>
+      <div className='absolute bottom-0 right-0 my-4 mr-4 hidden font-extralight sm:visible'>
         <a
           className='font-light hover:text-gray-100 active:text-gray-400'
           target='_blank'

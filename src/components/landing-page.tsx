@@ -9,7 +9,7 @@ export default function LandingPage() {
     <div className='min-h-screen overflow-y-auto overflow-x-hidden bg-background'>
       <div className='isolate'>
         {/* Who we are */}
-        <section className='absolute left-[50%] top-[50%] z-10 translate-x-[-50%] translate-y-[-50%]'>
+        <section className='absolute left-[50%] top-[40%] z-10 translate-x-[-50%] translate-y-[-40%] sm:top-[50%] sm:translate-y-[-50%]'>
           <div className='container w-screen space-y-10 xl:space-y-16'>
             <div className='grid place-items-center gap-4 px-10 md:grid-cols-2 md:gap-16'>
               <div>
