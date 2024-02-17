@@ -1,10 +1,14 @@
 {
-    "cSpell.words": [
-        "tailwindcss",
-        "trivago"
-    ],
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+  "cSpell.words": [
+    "antialased",
+    "noimageindex",
+    "Soobin",
+    "tailwindcss",
+    "Tobi",
+    "trivago"
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
