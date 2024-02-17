@@ -1,13 +1,18 @@
 {
   "cSpell.words": [
     "antialased",
+    "border",
+    "border-gray",
+    "Colorhunt",
+    "gray",
     "noimageindex",
     "nosniff",
     "Soobin",
     "SWE's",
     "tailwindcss",
     "Tobi",
-    "trivago"
+    "trivago",
+    "typing"
   ],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascript]": {
