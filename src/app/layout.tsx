@@ -32,11 +32,11 @@ export const metadata: Metadata = {
     images: images,
   },
   //   manifest: '/manifest.json',
-  //   icons: {
-  //     icon: '/icon.svg',
-  //     shortcut: '/icon.png',
-  //     apple: '/icon.png',
-  //   },
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
   metadataBase: new URL(url),
   authors: [
     {
