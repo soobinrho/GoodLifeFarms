@@ -10,6 +10,9 @@ import {
 import { JWT } from 'google-auth-library';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 
+const googleForms_order = process.env.GOOGLE_FORMS_ORDER ?? '';
+const googleSheetsID_inventory = process.env.GOOGLE_SHEETS_ID_INVENTORY ?? '';
+
 // Set up API access to Google Sheets.
 // Source:
 //   https://theoephraim.github.io/node-google-spreadsheet/
@@ -19,9 +22,42 @@ const googleSheetsAPIAuth = new JWT({
   scopes: ['https://www.googleapis.com/auth/spreadsheets'],
 });
 
-const doc = new GoogleSpreadsheet();
+interface Inventory {
+  produce: string;
+  note: string;
+  price: string;
+}
 
-export default function PrototypePage() {
+async function getInventory(): Promise<Inventory[]> {
+  const spreadsheet = new GoogleSpreadsheet(
+    googleSheetsID_inventory,
+    googleSheetsAPIAuth
+  );
+  await spreadsheet.loadInfo();
+  const sheet = spreadsheet.sheetsByIndex[0];
+  const rows = await sheet.getRows();
+
+  let inventory: Inventory[] = [];
+  for (let i = 0; i < rows.length; i++) {
+    if (rows[i].get('Produce')) {
+      inventory[i] = {
+        produce: rows[i].get('Produce'),
+        note: rows[i].get('Note'),
+        price: rows[i].get('Price'),
+      };
+    }
+  }
+  return inventory;
+}
+
+export default async function PrototypePage() {
+  let inventory: Inventory[] = [];
+  try {
+    inventory = await getInventory();
+  } catch (caughtError) {
+    console.log(caughtError);
+  }
+
   return (
     <>
       {/* TODO: Use Google Forms API to dynamically assign a form.*/}
@@ -35,38 +71,24 @@ export default function PrototypePage() {
             </TableRow>
           </TableHeader>
           <TableBody>
-            <TableRow>
-              <TableCell className='font-medium'>
-                <a
-                  className='w-max rounded-md bg-primary/75 px-4 py-2 text-lg text-primary-4 drop-shadow-[0_8px_8px_rgba(0,0,0,0.3)] transition-colors hover:bg-primary-3/90 focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50'
-                  target='_blank'
-                  href={googleForms_order + 'Onion'}
-                  el='noopener noreferrer'
-                >
-                  Onion
-                </a>
-              </TableCell>
-              <TableCell>
-                30 available. (Last updated: 2024-02-18 23:11)
-              </TableCell>
-              <TableCell>$0.93 per EA</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell className='font-medium'>
-                <a
-                  className='w-max whitespace-nowrap rounded-md bg-primary/75 px-4 py-2 text-lg text-primary-4 drop-shadow-[0_8px_8px_rgba(0,0,0,0.3)] transition-colors hover:bg-primary-3/90 focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50'
-                  target='_blank'
-                  href={googleForms_order + 'Cucumber'}
-                  rel='noopener noreferrer'
-                >
-                  Cucumber
-                </a>
-              </TableCell>
-              <TableCell>
-                15 available. (Last updated: 2024-02-18 05:52)
-              </TableCell>
-              <TableCell>$1.98 per EA</TableCell>
-            </TableRow>
+            {inventory.map((row) => {
+              return (
+                <TableRow>
+                  <TableCell className='font-medium'>
+                    <a
+                      className='w-max whitespace-nowrap rounded-md bg-primary/75 px-4 py-2 text-lg text-primary-4 drop-shadow-[0_8px_8px_rgba(0,0,0,0.3)] transition-colors hover:bg-primary-3/90 focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50'
+                      target='_blank'
+                      href={googleForms_order + row.produce}
+                      rel='noopener noreferrer'
+                    >
+                      {row.produce}
+                    </a>
+                  </TableCell>
+                  <TableCell>{row.note}</TableCell>
+                  <TableCell>{row.price}</TableCell>
+                </TableRow>
+              );
+            })}
           </TableBody>
         </Table>
       </div>
