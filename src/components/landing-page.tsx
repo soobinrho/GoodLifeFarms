@@ -12,7 +12,7 @@ export default function LandingPage() {
           <div className='container w-screen space-y-10 xl:space-y-16'>
             <div className='grid place-items-center gap-4 px-10 md:grid-cols-2 md:gap-16'>
               <div>
-                <h1 className='lg:leading-tighter text-start text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]'>
+                <h1 className='lg:leading-tighter text-pretty text-start text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]'>
                   Self-sustainable web app for{' '}
                   <TypeAnimation
                     className='text-primary/80 drop-shadow-[0_8px_8px_rgba(0,0,0,1)]'
@@ -37,7 +37,7 @@ export default function LandingPage() {
                 </h1>
               </div>
               <div className='flex flex-col items-start space-y-4'>
-                <p className='mx-auto max-w-[700px] text-cyan-200 md:text-xl'>
+                <p className='mx-auto max-w-[700px] text-pretty text-cyan-200 md:text-xl'>
                   Open-source web app designed for local farms. We are trying to
                   create low-maintenance, self-sustainable platform for local
                   farmers.
