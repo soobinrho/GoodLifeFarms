@@ -5,7 +5,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 export default function LandingPage() {
   return (
-    <div className='min-h-screen overflow-y-auto overflow-x-hidden bg-background'>
+    <div className='relative min-h-screen overflow-auto bg-background'>
       <div className='isolate'>
         {/* Who we are */}
         <section className='absolute left-[50%] top-[40%] z-10 translate-x-[-50%] translate-y-[-40%] sm:top-[50%] sm:translate-y-[-50%]'>

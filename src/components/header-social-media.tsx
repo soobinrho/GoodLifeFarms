@@ -1,11 +1,9 @@
 'use client';
 
-import Link from 'next/link';
-
 export default function HeaderSocialMedia() {
   return (
     <a
-      className='absolute end-0 z-30 mr-4 mt-4'
+      className='absolute end-0 z-30 mr-4 mt-4 sm:mr-8'
       target='_blank'
       href='https://github.com/soobinrho/good-life-farms'
       rel='noopener noreferrer'
