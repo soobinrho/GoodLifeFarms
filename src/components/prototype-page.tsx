@@ -7,9 +7,19 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/table';
+import { JWT } from 'google-auth-library';
+import { GoogleSpreadsheet } from 'google-spreadsheet';
 
-const googleForms_order =
-  'https://docs.google.com/forms/d/e/1FAIpQLSeQGWkV1U006035Lw3SpBW5ut1QrhmpIqjp5e3P90HG7k1fFg/viewform?usp=pp_url&entry.306245698=';
+// Set up API access to Google Sheets.
+// Source:
+//   https://theoephraim.github.io/node-google-spreadsheet/
+const googleSheetsAPIAuth = new JWT({
+  email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
+  key: process.env.GOOGLE_PRIVATE_KEY,
+  scopes: ['https://www.googleapis.com/auth/spreadsheets'],
+});
+
+const doc = new GoogleSpreadsheet();
 
 export default function PrototypePage() {
   return (
