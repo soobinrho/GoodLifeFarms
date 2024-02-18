@@ -10,15 +10,11 @@ We're trying to make self-sustainable web apps for local farms.
 > Spending time doing marketing is expensive and time consuming.
 > It is hard to tell a lot of people at once what you have on FB and have them order." (Dr. G from Augustana University)
 
-At TreeHacks, we're making a prototype for Good Life Farms, but we hope to make it deployable by anyone who needs it, whether it be seniors, college students, or SWE's trying to have their own farm.
+One of our bio professor (Dr. G) needs a web app for her farm, which she operates with her husband in Canton, South Dakota.
+This is the prototype of our web app.
+This was made specifically for Good Life Farms, but we hope to make it deployable by anyone who needs it, whether it be seniors, college students, or SWE's trying to have their own farm.
 
-## Issue
-
-[Interview detail with Dr. G.]
-
-[Current problem with existing technology.]
-
-[Specific needs local produces have and how our web app incorporates them]
+Our goal is to (a) make our web app as self-sustainable as possible -- i.e. zero maintenance cost if possible by using free API's (Google Sheets API and Google Forms API), and (b) design the web app specifically for local farmers' use cases: UI suitable for field use for farmers.
 
 ## Getting Started
 
