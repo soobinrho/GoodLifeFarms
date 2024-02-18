@@ -5,11 +5,11 @@ import PrototypePage from '@/components/prototype-page';
 
 export default function Page() {
   return (
-    <div className='text-primary'>
+    <main className='relative min-h-screen w-full text-primary'>
       <HeaderGoBackToHome />
       <HeaderSocialMedia />
       <PrototypePage />
       <Footer />
-    </div>
+    </main>
   );
 }
