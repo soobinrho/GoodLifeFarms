@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
 export default function LandingPage() {
@@ -24,7 +23,7 @@ export default function LandingPage() {
                       2000,
                       'florists',
                       2000,
-                      'local producers',
+                      'local producers.',
                       8000,
                       'florists',
                       2000,
@@ -46,7 +45,7 @@ export default function LandingPage() {
                 <div className='space-x-4'>
                   <Link
                     className='inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-lg font-bold text-primary-3 drop-shadow-[0_8px_8px_rgba(0,0,0,1)] transition-colors hover:bg-gray-300 hover:drop-shadow-2xl focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50'
-                    href='#'
+                    href='/prototype'
                   >
                     Prototype
                   </Link>
