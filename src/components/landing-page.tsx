@@ -15,7 +15,7 @@ export default function LandingPage() {
                 <h1 className='lg:leading-tighter text-pretty text-start text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]'>
                   Self-sustainable web app for{' '}
                   <TypeAnimation
-                    className='text-primary/80 drop-shadow-[0_8px_8px_rgba(0,0,0,1)]'
+                    className='font-extrabold text-primary/70'
                     sequence={[
                       'local farms',
                       2000,
@@ -37,20 +37,20 @@ export default function LandingPage() {
                 </h1>
               </div>
               <div className='flex flex-col items-start space-y-4'>
-                <p className='mx-auto max-w-[700px] text-pretty text-cyan-200 md:text-xl'>
+                <p className='mx-auto max-w-[700px] text-pretty text-primary-3 md:text-xl'>
                   Open-source web app designed for local farms. We are trying to
                   create low-maintenance, self-sustainable platform for local
                   farmers.
                 </p>
                 <div className='space-x-4'>
                   <Link
-                    className='inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-lg font-bold text-primary-3 drop-shadow-[0_8px_8px_rgba(0,0,0,1)] transition-colors hover:bg-gray-300 hover:drop-shadow-2xl focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50'
+                    className='text-primary-4 inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-lg font-bold drop-shadow-[0_8px_8px_rgba(0,0,0,1)] transition-colors hover:bg-primary-3 focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50'
                     href='/prototype'
                   >
                     Prototype
                   </Link>
                   <a
-                    className='inline-flex items-center justify-center rounded-md bg-slate-800 px-4 py-2 text-lg font-medium text-cyan-600 drop-shadow-[0_8px_8px_rgba(0,0,0,1)] transition-colors hover:bg-gray-300 hover:text-primary-3 hover:drop-shadow-2xl focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50'
+                    className='text-primary-4 inline-flex items-center justify-center rounded-md bg-primary/75 px-4 py-2 text-lg font-bold drop-shadow-[0_8px_8px_rgba(0,0,0,0.3)] transition-colors hover:bg-primary-3/90 focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50'
                     target='_blank'
                     href='https://github.com/soobinrho/good-life-farms/blob/main/DEVLOG.md#who-are-we'
                     rel='noopener noreferrer'
@@ -74,11 +74,11 @@ export default function LandingPage() {
               https://tailwindui.com/components/marketing/sections/heroes
         */}
           <div className='absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80'>
-            <div className='relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] overflow-hidden bg-gradient-to-tr from-[#1B1A55] to-[#535C91] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]'></div>
+            <div className='relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] overflow-hidden bg-gradient-to-tr from-[#B8B42D] to-[#FFFCF1] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]'></div>
           </div>
           <div className='mx-auto max-w-2xl overflow-hidden py-32 sm:py-48 lg:py-56'></div>
           <div className='absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]'>
-            <div className='relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 overflow-hidden bg-gradient-to-tr from-[#1B1A55] to-[#535C91] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]'></div>
+            <div className='relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 overflow-hidden bg-gradient-to-tr from-[#B8B42D] to-[#FFFCF1] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]'></div>
           </div>
         </div>
       </div>

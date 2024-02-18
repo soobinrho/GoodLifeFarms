@@ -9,7 +9,7 @@ export default function HeaderSocialMedia() {
       rel='noopener noreferrer'
     >
       <svg
-        className='fill-current hover:text-white active:text-gray-300'
+        className='fill-current hover:text-primary-3/70 active:text-black/70'
         xmlns='http://www.w3.org/2000/svg'
         width='24'
         height='24'

@@ -7,7 +7,7 @@ export default function HeaderGoBackToHome() {
     <header className='absolute start-0 z-30 ml-4 mt-4 flex gap-3'>
       <Link href='/'>
         <svg
-          className='fill-current hover:text-white active:text-gray-300'
+          className='fill-current hover:text-primary-3/70 active:text-black/70'
           width='24'
           height='24'
           xmlns='http://www.w3.org/2000/svg'
@@ -18,7 +18,7 @@ export default function HeaderGoBackToHome() {
         </svg>
       </Link>
       <Link href='/'>
-        <p className='font-extrabold drop-shadow-[0_8px_8px_rgba(0,0,0,1)] hover:text-white active:text-gray-300'>
+        <p className='font-extrabold drop-shadow-[0_8px_8px_rgba(0,0,0,0.5)] hover:text-primary-3/70 active:text-black/70'>
           Good Life Farms
         </p>
       </Link>

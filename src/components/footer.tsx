@@ -8,7 +8,7 @@ export default function Footer() {
       <div className='absolute bottom-0 mb-4 ml-3 font-extralight'>
         Made with ❤ by{' '}
         <a
-          className='font-light hover:text-gray-100 active:text-gray-400'
+          className='font-light hover:text-primary-3/70 active:text-black/70'
           target='_blank'
           href='https://www.linkedin.com/in/kathy-do-1b035a242/'
           rel='noopener noreferrer'
@@ -17,7 +17,7 @@ export default function Footer() {
         </a>
         ,{' '}
         <a
-          className='font-light hover:text-gray-100 active:text-gray-400'
+          className='font-light hover:text-primary-3/70 active:text-black/70'
           target='_blank'
           href='https://www.linkedin.com/in/oluwatobiloba-o-992772241/'
           rel='noopener noreferrer'
@@ -26,7 +26,7 @@ export default function Footer() {
         </a>
         , and{' '}
         <a
-          className='font-light hover:text-gray-100 active:text-gray-400'
+          className='font-light hover:text-primary-3/70 active:text-black/70'
           target='_blank'
           href='https://www.linkedin.com/in/soobinrho/'
           rel='noopener noreferrer'
@@ -38,13 +38,13 @@ export default function Footer() {
 
       <div className='absolute bottom-0 right-0 mb-4 mr-4 font-extralight sm:mr-8'>
         <a
-          className='font-light hover:text-gray-100 active:text-gray-400'
+          className='font-light hover:text-primary-3/70 active:text-black/70'
           target='_blank'
           href='https://devpost.com/software/good-life-farms'
           rel='noopener noreferrer'
         >
           <svg
-            className='hover:text-white active:text-gray-300'
+            className='hover:text-primary-3/70 active:text-black/70'
             width='32'
             height='36'
             viewBox='0 0 3189 3410'
