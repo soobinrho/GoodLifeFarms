@@ -3,7 +3,9 @@
 
 ## Who are we?
 
-Kathy, Tobi, and I met at 2024 TreeHacks, and ...
+We (Soobin, Tobi, Kathy) met at TreeHacks 2024 and joined hands with the intention to not only challenge ourselves but also to ultilize this opportunity to make a real-life impact. For our project, we decided to help Soobin's biology professor at Augustana University, Dr. G, build a web app for Good Life Farms, a vegetable farm in Canton, South Dakota. The idea came from the need for a median connecting speciality producers with local families, restuarants, and groceries. For many producers, marketing their products often demands extra effort, diverting time from hands-on farm work. With our project we aim to make the most self-sustainable platform for local producers, allowing them to efficiently match with customers and advertise their listings in a user-friendly manner—with zero maintenance cost. 
+
+
 
 ## 2024-02-16
 
