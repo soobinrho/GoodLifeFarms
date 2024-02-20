@@ -3,17 +3,14 @@
 
 ## Who are we?
 
-We (Soobin, Tobi, Kathy) met at TreeHacks 2024 and joined hands with the intention to not only challenge ourselves but also to utilize this opportunity to make a real-life impact.
+We are Kathy, Tobi, and Soobin.
+We met at Stanford TreeHacks, in which we created self-sustainable web app for local producers (farmers, beekeepers, and so on).
 
-Soobin's biology professor at Augustana University, Dr. G, needs a web app for Good Life Farms, a vegetable farm in Canton, South Dakota.
-The idea came from the need for a medium connecting local producers (farmers, beekeepers, and so on) with local families.
-According to Dr. G, local farmers try using existing technology - such as Facebook Marketplace - but these current existing technologies are not very ideal for their use cases because using them requires too much time on marketing and finding customers.
+Right now, our website just shows a prototype, but in the far future hopefully, we envision to have a "create your own web app for your local farm" button which can create this web app for any local producers who needs their own web app to sell their produces.
 
-Instead, what they need is an app (ideally in the form of an IOS / Android app, but we're making it as a web app for prototyping purposes), an app that can help them not spend any more time marketing and instead spend time caring for their farms, gardens, beehives, and so on.
-Also, they need an app whose UI is suitable to use right at the field -- it's not ideal if they have to come back indoors and sit down in front of a computer whenever they need to update their stock information.
-
-In addition, Dr. G wants this app to not only help local producers connect with neighboring household customers, but also connect with restaurants.
-As it turns out, preparing packages for bulk orders tend to be simpler, in contrast to individual orders, which require more packaging and therefore more time.
+Our main aim was
+- (a) to make it as self-sustainable as possible by making it zero-maintenance cost (we did it by getting rid of databases and just using Google Sheets API's which are completely free) so that the local producers don't have to pay a dime in order to have their own dedicated platform, and
+- (b) to make it as UI/UX friendly as possible so that they can use it in the field without having to come back indoors and sit in front of their computers. We built it such that basically we give you an access to Google Sheets document, and whatever you edit there (name of the produce and quantity and notes) gets automatically listed on the web app. So, the only thing the farmer has to do is just type in whatever they have (name / quantity / notes) on a Google Sheet!
 
 ## 2024-02-16
 
