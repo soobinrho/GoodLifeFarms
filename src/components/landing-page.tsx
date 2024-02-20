@@ -38,9 +38,8 @@ export default function LandingPage() {
               </div>
               <div className='flex flex-col items-start space-y-4'>
                 <p className='mx-auto max-w-[700px] text-pretty text-primary-3 md:text-xl'>
-                  Open-source web app designed for local farms. We are trying to
-                  create low-maintenance, self-sustainable platform for local
-                  farmers.
+                  We make a dedicated, self-sustainable web app for you, and we'll do our best                  
+                  to keep it free forever for all local producers.
                 </p>
                 <div className='space-x-4'>
                   <Link
