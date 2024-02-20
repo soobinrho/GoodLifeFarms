@@ -5,11 +5,11 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 const title = 'Good Life Farm';
-const description = 'Making the most self-sustainable farm.';
-const url = 'https://github.com/soobinrho/good-life-farm';
+const description = 'Making self-sustainable web app for local producers.';
+const url = 'https://github.com/soobinrho/good-life-farms';
 const category = 'Vegetables';
-const keywords = ['good life farm', 'self-sustainable farm'];
-const images = '/group-picture.jpg';
+const keywords = ['good life farms', 'self-sustainable farm'];
+const images = 'https://opengraph.githubassets.com/1e6735c3a867f91324705ce1701f44ad153a85555826c48cf9d8ff50c4ff3de1/soobinrho/good-life-farms';
 const authors = 'Tobi, Kathy, and Soobin';
 
 export const metadata: Metadata = {
