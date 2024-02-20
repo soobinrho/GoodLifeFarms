@@ -4,8 +4,8 @@ import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
 
-const title = 'Good Life Farm';
-const description = 'Making self-sustainable web app for local producers.';
+const title = 'Good Life Farms';
+const description = 'Creating self-sustainable platform for local producers.';
 const url = 'https://github.com/soobinrho/good-life-farms';
 const category = 'Vegetables';
 const keywords = ['good life farms', 'self-sustainable farm'];
