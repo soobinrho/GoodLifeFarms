@@ -61,7 +61,7 @@ export default function LandingPage() {
             </div>
             <img
               alt='Produces from Good Life Farms. '
-              className='mx-auto mb-10 aspect-[3/1] max-w-[85vw] max-h-[40%] overflow-auto rounded-xl object-cover drop-shadow-[0_8px_8px_rgba(0,0,0,1)] sm:max-w-[65vw]'
+              className='mx-auto mb-10 aspect-[3/1] min-w-[94%] max-h-[40vh] overflow-auto rounded-xl object-cover drop-shadow-[0_8px_8px_rgba(0,0,0,1)] sm:max-w-[65vw]'
               src='/farm-produces.jpg'
             />
           </div>
