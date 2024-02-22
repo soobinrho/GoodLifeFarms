@@ -16,7 +16,7 @@ export default function HeaderGoBackToHome() {
         </svg>
       </Link>
       <Link href='/'>
-        <p className='font-extrabold drop-shadow-[0_8px_8px_rgba(0,0,0,0.5)] hover:text-primary-3/70 active:text-black/70'>
+        <p className='invisible font-extrabold drop-shadow-[0_8px_8px_rgba(0,0,0,0.5)] hover:text-primary-3/70 active:text-black/70 sm:visible'>
           Good Life Farms
         </p>
       </Link>

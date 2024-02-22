@@ -23,8 +23,8 @@ export default function HeaderGoogleSheets() {
         href='https://docs.google.com/spreadsheets/d/11_5BPnlA3c1OWxi3f5ej0adNLs6DXseL7qeKPvOlJyU/edit?usp=sharing'
         rel='noopener noreferrer'
       >
-        <span className='font-extralight hover:text-primary-3/70 active:text-black/70'>
-          Open in Google Sheets
+        <span className='text-nowrap font-extralight hover:text-primary-3/70 active:text-black/70'>
+          Open in Sheets
         </span>
       </a>
     </div>
