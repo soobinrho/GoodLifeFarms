@@ -24,6 +24,9 @@ pnpm create next-app good-life-farms
 
 # Color palette was generated using Colorhunt.co:
 #   https://coolors.co/366345-b8b42d-6a3937-fffcf1-f4f4f8
+
+# Main package we relied on:
+#   https://theoephraim.github.io/node-google-spreadsheet/
 ```
 
 ## 2024-02-18
