@@ -31,6 +31,9 @@ pnpm create next-app good-life-farms
 
 # If using VS Code, recommended to install the Prettier extension:
 #   https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+
+# Google Sheets icon source:
+#   https://simpleicons.org/?q=sheets
 ```
 
 ## 2024-02-18
