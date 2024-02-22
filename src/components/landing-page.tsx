@@ -10,7 +10,7 @@ export default function LandingPage() {
         {/* Who we are */}
         <section className='absolute left-[50%] top-[40%] z-10 translate-x-[-50%] translate-y-[-40%] sm:top-[50%] sm:translate-y-[-50%]'>
           <div className='container w-screen space-y-10 xl:space-y-16'>
-            <div className='grid place-items-center gap-4 px-10 md:grid-cols-2 md:gap-16'>
+            <div className='grid place-items-center gap-4 px-10 md:grid-cols-2 md:gap-16 sm:w-[94%]'>
               <div>
                 <h1 className='lg:leading-tighter text-pretty text-start text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]'>
                   Self-sustainable web app for{' '}
@@ -61,7 +61,7 @@ export default function LandingPage() {
             </div>
             <img
               alt='Produces from Good Life Farms. '
-              className='mx-auto mb-10 aspect-[3/1] min-w-[94%] max-h-[40vh] overflow-auto rounded-xl object-cover drop-shadow-[0_8px_8px_rgba(0,0,0,1)] sm:max-w-[65vw]'
+              className='mx-auto mb-10 aspect-[3/1] w-[85%] sm:w-[94%] max-h-[40vh] overflow-auto rounded-xl object-cover drop-shadow-[0_8px_8px_rgba(0,0,0,1)]'
               src='/farm-produces.jpg'
             />
           </div>
