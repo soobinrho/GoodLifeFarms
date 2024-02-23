@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function Footer() {
   return (
     <>
-      <div className='absolute bottom-0 mb-4 ml-3 font-extralight'>
+      <div className='absolute bottom-0 mb-4 ml-3 text-nowrap font-extralight'>
         Made with ❤ by{' '}
         <a
           className='font-light hover:text-primary-3/70 active:text-black/70'
