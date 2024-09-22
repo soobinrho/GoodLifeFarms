@@ -1,0 +1,50 @@
+# ---------------------------------------------------------------------
+# HOW TO RUN
+# @example
+# cd GoodLifeFarms/docker
+# cp .env.production .env.local
+# docker compose build
+# docker compose up -d
+#
+# HOW TO STOP
+# @example
+# cd GoodLifeFarms/docker
+# docker compose down
+# ---------------------------------------------------------------------
+version: '3.8'
+services:
+  goodlifefarms:
+    container_name: goodlifefarms
+    build:
+      context: .
+      dockerfile: Dockerfile.goodlifefarms
+    restart: unless-stopped
+    networks:
+      - back-end
+    expose:
+      - 3001  # used by Node (pnpm)
+    env_file:
+      - ../.env.local
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    restart: unless-stopped
+    pull_policy: always
+    networks:
+      - back-end
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    command:
+      - nginx
+      - -g
+      - daemon off;
+
+# "The presence of these objects is sufficient to define them"
+# Source:
+#   https://docs.docker.com/compose/compose-file/
+networks:
+  back-end: {}
