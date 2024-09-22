@@ -22,7 +22,7 @@ services:
     networks:
       - back-end
     expose:
-      - 8001  # used by Node (pnpm)
+      - 3000  # used by Node (pnpm)
 
   nginx:
     image: nginx:latest
