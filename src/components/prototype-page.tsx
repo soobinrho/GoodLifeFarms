@@ -23,6 +23,7 @@ const googleSheetsAPIAuth = new JWT({
 });
 
 interface Inventory {
+  index: number;
   produce: string;
   note: string;
   price: string;
@@ -41,6 +42,7 @@ async function getInventory(): Promise<Inventory[]> {
   for (let i = 0; i < rows.length; i++) {
     if (rows[i].get('Produce')) {
       inventory[i] = {
+        index: i,
         produce: rows[i].get('Produce'),
         note: rows[i].get('Note'),
         price: rows[i].get('Price'),
@@ -73,7 +75,7 @@ export default async function PrototypePage() {
           <TableBody>
             {inventory.map((row) => {
               return (
-                <TableRow>
+                <TableRow key={row.index}>
                   <TableCell className='font-medium'>
                     <a
                       className='w-max whitespace-nowrap rounded-md bg-primary/75 px-4 py-2 text-lg text-primary-4 drop-shadow-[0_8px_8px_rgba(0,0,0,0.3)] transition-colors hover:bg-primary-3/90 focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50'
