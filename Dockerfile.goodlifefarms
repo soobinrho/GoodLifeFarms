@@ -1,25 +1,24 @@
-FROM alpine:latest
+FROM node AS base
 
 LABEL com.beemovr.description="https://github.com/soobinrho/GoodLifeFarms"
 LABEL com.beemovr.maintainer="Soobin Rho <soobin@nsustain.com>"
 
-#
-# System setup
-#
-RUN apk update \
- && apk upgrade --no-cache \
- && apk add --no-cache \
-    git \
-    bash \
- && cd /home \
- && git clone https://github.com/soobinrho/GoodLifeFarms \
- && cd GoodLifeFarms \
- && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash \
- && source ~/.bashrc \
- && nvm install node \
- && npm install -g pnpm \
- && pnpm install --prod \
- && pnpm build
+ENV PNPM_HOME="/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
+RUN corepack enable
+COPY . /app
+WORKDIR /app
+
+FROM base AS prod-deps
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --prod --frozen-lockfile
+
+FROM base AS build
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile
+RUN pnpm run build --prod
+
+FROM base
+COPY --from=prod-deps /app/node_modules /app/node_modules
+COPY --from=build /app/dist /app/dist
 
 # Unlike RUN, which runs commands at the build time,
 # CMD is what the image runs when we use "docker run ..."
@@ -35,6 +34,5 @@ RUN apk update \
 #   CMD ["--help"]
 # Source:
 #   https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
-WORKDIR /home/GoodLifeFarms
 ENTRYPOINT ["pnpm"]
 CMD ["start"]

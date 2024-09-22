@@ -22,9 +22,7 @@ services:
     networks:
       - back-end
     expose:
-      - 3001  # used by Node (pnpm)
-    env_file:
-      - ../.env.local
+      - 8001  # used by Node (pnpm)
 
   nginx:
     image: nginx:latest
@@ -37,7 +35,7 @@ services:
       - 80:80
       - 443:443
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./configs_nginx/nginx.conf:/etc/nginx/nginx.conf
     command:
       - nginx
       - -g
