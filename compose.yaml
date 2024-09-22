@@ -17,6 +17,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.goodlifefarms
+    depends_on:
+      - nginx
     restart: unless-stopped
     networks:
       - back-end
