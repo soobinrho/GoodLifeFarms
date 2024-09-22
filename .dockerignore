@@ -1,7 +1,9 @@
 # Source:
-#   https://pnpm.io/docker
+#   https://github.com/vercel/next.js/blob/canary/examples/with-docker/.dockerignore
+Dockerfile
+.dockerignore
 node_modules
-.git
-.gitignore
+npm-debug.log
 *.md
-dist
+.next
+.git

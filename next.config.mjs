@@ -32,6 +32,11 @@ const nextConfig = {
       },
     ];
   },
+  // Recommended by Next.js documentation to export as standalone
+  // for Docker projects.
+  // Source:
+  //   https://github.com/vercel/next.js/tree/canary/examples/with-docker#in-existing-projects
+  output: 'standalone',
 };
 
 export default nextConfig;
