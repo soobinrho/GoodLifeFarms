@@ -10,10 +10,13 @@ RUN apk update \
  && apk upgrade --no-cache \
  && apk add --no-cache \
     git \
-    npm \
+    bash \
  && cd /home \
  && git clone https://github.com/soobinrho/GoodLifeFarms \
  && cd GoodLifeFarms \
+ && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+ && source ~/.bashrc \
+ && nvm install node \
  && npm install -g pnpm \
  && pnpm install --prod \
  && pnpm build
