@@ -9,6 +9,7 @@ import {
 } from '@/components/table';
 import { JWT } from 'google-auth-library';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
+import { unstable_noStore as noStore } from 'next/cache';
 
 const googleForms_order = process.env.GOOGLE_FORMS_ORDER ?? '';
 const googleSheetsID_inventory = process.env.GOOGLE_SHEETS_ID_INVENTORY ?? '';
@@ -53,6 +54,11 @@ async function getInventory(): Promise<Inventory[]> {
 }
 
 export default async function PrototypePage() {
+  // "`noStore` can be used to declaratively opt out of static rendering
+  // and indicate a particular Server Component should not be cached."
+  // Source:
+  //   https://nextjs.org/docs/app/api-reference/functions/unstable_noStore
+  noStore();
   let inventory: Inventory[] = [];
   try {
     inventory = await getInventory();
