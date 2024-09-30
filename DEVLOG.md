@@ -40,9 +40,7 @@ pnpm create next-app good-life-farms
 
 After 36 hours of sleepless nights at TreeHacks, we finished our prototype!
 
-<img src="https://github.com/soobinrho/good-life-farms/assets/19341857/714ccbab-7fcb-4e51-947b-912261e43e49" width="500px">
 <img src="https://github.com/soobinrho/good-life-farms/assets/19341857/def6b413-cab8-4ec5-a4af-d2a5b5a0df96" width="500px">
 <img src="https://github.com/soobinrho/good-life-farms/assets/19341857/d2012e65-0a2f-42e0-8a8c-e7d3b3ea479b" width="500px">
-<img src="https://github.com/soobinrho/good-life-farms/assets/19341857/5436621c-8c52-4943-9e35-0a819ab7d3b0" width="500px">
 
 <br>
