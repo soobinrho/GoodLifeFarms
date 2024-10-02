@@ -7,7 +7,7 @@ We are Kathy, Tobi, and Soobin.
 We met at Stanford TreeHacks, in which we created self-sustainable web app for local producers (farmers, beekeepers, and so on).
 
 Right now, our website just shows a prototype, but in the far future hopefully, we envision to have a "create your own web app for your local farm" button which can create this web app for any local producers who needs their own web app to sell their produces -- a dedicated, low-maintenance platform for each and every local producer who needs one.
-We envision to be Vercel for local producers -- providing a completely free service to anyone who needs it, and starting to charge for our services, only if that specific user needs millions or billions of rows of data that cannot be handled effectively by our existing, free Google Sheets back-end infrastructure.
+We envision to be Vercel for local producers -- providing a completely free service to anyone who needs it, and if you need millions or billions of rows of data that cannot be handled effectively by our existing, free Google Sheets back-end infrastructure, then you can migrate to proprietary services like Shopify.
 
 Our main aim is
 
