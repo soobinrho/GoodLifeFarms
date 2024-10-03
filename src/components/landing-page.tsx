@@ -36,13 +36,13 @@ export default function LandingPage() {
                   />
                 </h1>
               </div>
-              <div className='flex flex-col items-start space-y-4'>
-                <p className='mx-auto max-w-[700px] text-pretty text-primary-3 md:text-xl'>
+              <div className='flex flex-col flex-wrap items-center space-y-4 sm:items-start'>
+                <p className='mx-auto max-w-fit text-pretty text-primary-3 md:text-xl'>
                   Platform for local producers and local consumers. Designed to
                   be as self-sustainable and low-maintenance as possible. Made
                   by volunteers who love the environment and sustainability.
                 </p>
-                <div className='space-x-4'>
+                <div className='flex flex-col items-center space-y-4 overflow-visible text-nowrap sm:flex-row sm:space-x-4 sm:space-y-0'>
                   <Link
                     className='inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-lg font-bold text-primary-4 drop-shadow-[0_8px_8px_rgba(0,0,0,1)] transition-colors hover:bg-primary-3 focus:bg-primary-3/60 focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50'
                     href='/prototype'
