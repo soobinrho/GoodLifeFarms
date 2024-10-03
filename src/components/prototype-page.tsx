@@ -10,6 +10,10 @@ import {
 import { JWT } from 'google-auth-library';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 import { unstable_noStore as noStore } from 'next/cache';
+import Error from 'next/error';
+import React from 'react';
+
+noStore();
 
 const googleForms_order = process.env.GOOGLE_FORMS_ORDER ?? '';
 const googleSheetsID_inventory = process.env.GOOGLE_SHEETS_ID_INVENTORY ?? '';
@@ -55,51 +59,88 @@ async function getInventory(): Promise<Inventory[]> {
 }
 
 export default async function PrototypePage() {
+  let isError = false;
+
   // "`noStore` can be used to declaratively opt out of static rendering
   // and indicate a particular Server Component should not be cached."
   // Source:
   //   https://nextjs.org/docs/app/api-reference/functions/unstable_noStore
-  noStore();
   let inventory: Inventory[] = [];
   try {
     inventory = await getInventory();
-  } catch (caughtError) {
-    console.log(caughtError);
+  } catch (err) {
+    isError = true;
+    console.log(err);
   }
 
   return (
     <>
       {/* TODO: Use Google Forms API to dynamically assign a form.*/}
       <div className='relative h-max min-h-screen overflow-y-auto bg-background'>
-        <Table className='mx-auto mb-14 mt-20 max-w-[95%]'>
-          <TableHeader>
-            <TableRow>
-              <TableHead className='w-[100px]'>Produce</TableHead>
-              <TableHead>Note</TableHead>
-              <TableHead>Price</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {inventory.map((row) => {
-              return (
-                <TableRow key={row.index}>
-                  <TableCell className='font-medium'>
-                    <a
-                      className='w-max whitespace-nowrap rounded-md bg-primary/75 px-4 py-2 text-lg text-primary-4 drop-shadow-[0_8px_8px_rgba(0,0,0,0.3)] transition-colors hover:bg-primary-3/90 focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50'
-                      target='_blank'
-                      href={googleForms_order + row.produce}
-                      rel='noopener noreferrer'
-                    >
-                      {row.produce}
-                    </a>
-                  </TableCell>
-                  <TableCell>{row.note}</TableCell>
-                  <TableCell>{row.price}</TableCell>
+        {!isError ? (
+          <Table className='mx-auto mb-14 mt-20 max-w-[95%]'>
+            <TableHeader>
+              <TableRow>
+                <TableHead className='w-[100px]'>Produce</TableHead>
+                <TableHead>Note</TableHead>
+                <TableHead>Price</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {inventory.map((row) => {
+                return (
+                  <TableRow key={row.index}>
+                    <TableCell className='font-medium'>
+                      <a
+                        className='w-max whitespace-nowrap rounded-md bg-primary/75 px-4 py-2 text-lg text-primary-4 drop-shadow-[0_8px_8px_rgba(0,0,0,0.3)] transition-colors hover:bg-primary-3/90 focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50'
+                        target='_blank'
+                        href={googleForms_order + row.produce}
+                        rel='noopener noreferrer'
+                      >
+                        {row.produce}
+                      </a>
+                    </TableCell>
+                    <TableCell>{row.note}</TableCell>
+                    <TableCell>{row.price}</TableCell>
+                  </TableRow>
+                );
+              })}
+            </TableBody>
+          </Table>
+        ) : (
+          <>
+            <Table className='mx-auto mb-14 mt-20 max-w-[95%]'>
+              <TableHeader>
+                <TableRow>
+                  <TableHead className='w-[100px]'>Produce</TableHead>
+                  <TableHead>Note</TableHead>
+                  <TableHead>Price</TableHead>
                 </TableRow>
-              );
-            })}
-          </TableBody>
-        </Table>
+              </TableHeader>
+              <TableBody></TableBody>
+            </Table>
+            <div className='absolute left-[50%] top-[50%] mx-auto w-[95%] translate-x-[-50%] translate-y-[-50%] overflow-auto text-pretty text-center lg:w-[50%]'>
+              <div className='relative mx-4 my-16 whitespace-break-spaces rounded-md bg-slate-300/95 p-4'>
+                <p className='font-black'>ERROR</p>
+                <p className='font-light'>
+                  We have a limit of 300 reads per minute because we're using
+                  Google's free Spreadsheet APIs. Please refresh this page and
+                  try again. We built this web app entirely using free services
+                  without any dedicated database of our own to minimize
+                  maintenance cost and therefore provide this web app for free
+                  for all local producers. If you would like to see how we built
+                  this, our source code is available at{' '}
+                  <a
+                    className='hover:text-primary-3/70 active:text-black/70'
+                    href='https://github.com/soobinrho/GoodLifeFarms'
+                  >
+                    https://github.com/soobinrho/GoodLifeFarms
+                  </a>
+                </p>
+              </div>
+            </div>
+          </>
+        )}
       </div>
     </>
   );

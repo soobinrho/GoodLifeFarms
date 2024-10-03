@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
 export default function LandingPage() {
