@@ -50,6 +50,7 @@ async function getInventory(): Promise<Inventory[]> {
       };
     }
   }
+  spreadsheet.resetLocalCache();
   return inventory;
 }
 
