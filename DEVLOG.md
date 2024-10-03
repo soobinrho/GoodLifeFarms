@@ -1,6 +1,23 @@
 <br>
 <br>
 
+## What we are not
+
+We are not a marketplace app like Ebay or Amazon.
+We make a single web page for each local producer, and because our main focus is to be as self-sustainable as possible, we don't process payments either.
+Rather, it's up to you, the local producer, to decide on the payment and delivery logistics -- our web app is for local producers and local consumers as a way of promoting environmental sustainability.
+
+We avoid fancy, expensive technology at all costs, and in fact, our goal is to be as low-maintenance as possible -- i.e. zero cost maintenance cost.
+To do so, we didn't use any dedicated database or cloud infrastructure services to build our web app because they are expensive to maintain.
+Instead, our web app is built using entirely-free components (Google Sheets, Google Forms, etc).
+Thus, it's free for us to maintain Good Life Farms aside from a few dollars of server hosting fee, and therefore, we don't have to charge any of our users.
+
+## What we can do for you
+
+Fill out this form https://forms.gle/5m1Tr4JXqT9Thb286 and we will make a web page for you.
+You will then get an invite to a new Google Sheets, where you can enter your items.
+Everything you enter there, it will be updated in real-time in the web page we created for you.
+
 ## Who are we?
 
 We are Kathy, Tobi, and Soobin.

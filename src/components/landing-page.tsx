@@ -10,7 +10,7 @@ export default function LandingPage() {
         {/* Who we are */}
         <section className='absolute left-[50%] top-[40%] z-10 translate-x-[-50%] translate-y-[-40%] sm:top-[50%] sm:translate-y-[-50%]'>
           <div className='container w-screen space-y-10 xl:space-y-16'>
-            <div className='grid place-items-center gap-4 px-10 md:grid-cols-2 md:gap-16 sm:w-[94%]'>
+            <div className='grid place-items-center gap-4 px-10 sm:w-[94%] md:grid-cols-2 md:gap-16'>
               <div>
                 <h1 className='lg:leading-tighter text-pretty text-start text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]'>
                   Self-sustainable web app for{' '}
@@ -38,18 +38,18 @@ export default function LandingPage() {
               </div>
               <div className='flex flex-col items-start space-y-4'>
                 <p className='mx-auto max-w-[700px] text-pretty text-primary-3 md:text-xl'>
-                  We make a dedicated, self-sustainable web app for you, and we'll do our best                  
-                  to keep it free forever for all local producers.
+                  Platform for local producers and local consumers. Designed to
+                  be as self-sustainable as possible; low maintenance; and free.
                 </p>
                 <div className='space-x-4'>
                   <Link
-                    className='text-primary-4 inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-lg font-bold drop-shadow-[0_8px_8px_rgba(0,0,0,1)] transition-colors hover:bg-primary-3 focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50'
+                    className='inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-lg font-bold text-primary-4 drop-shadow-[0_8px_8px_rgba(0,0,0,1)] transition-colors hover:bg-primary-3 focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50'
                     href='/prototype'
                   >
                     Prototype
                   </Link>
                   <a
-                    className='text-primary-4 inline-flex items-center justify-center rounded-md bg-primary/75 px-4 py-2 text-lg font-bold drop-shadow-[0_8px_8px_rgba(0,0,0,0.3)] transition-colors hover:bg-primary-3/90 focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50'
+                    className='inline-flex items-center justify-center rounded-md bg-primary/75 px-4 py-2 text-lg font-bold text-primary-4 drop-shadow-[0_8px_8px_rgba(0,0,0,0.3)] transition-colors hover:bg-primary-3/90 focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50'
                     target='_blank'
                     href='https://github.com/soobinrho/good-life-farms/blob/main/DEVLOG.md#who-are-we'
                     rel='noopener noreferrer'
@@ -61,7 +61,7 @@ export default function LandingPage() {
             </div>
             <img
               alt='Produces from Good Life Farms. '
-              className='mx-auto mb-10 aspect-[3/1] w-[85%] sm:w-[94%] max-h-[40vh] overflow-auto rounded-xl object-cover drop-shadow-[0_8px_8px_rgba(0,0,0,1)]'
+              className='mx-auto mb-10 aspect-[3/1] max-h-[40vh] w-[85%] overflow-auto rounded-xl object-cover drop-shadow-[0_8px_8px_rgba(0,0,0,1)] sm:w-[94%]'
               src='/farm-produces.jpg'
             />
           </div>
