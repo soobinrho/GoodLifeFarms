@@ -1,5 +1,4 @@
 <br>
-<br>
 
 ## What we are not
 
@@ -10,6 +9,8 @@ We avoid fancy, expensive technology at all costs, and in fact, we provide our v
 To achieve this, we didn't use any dedicated database or cloud infrastructure services to build our web app because they're expensive to maintain.
 Instead, our web app is built solely using free services provided by Google (Sheets, Forms, etc).
 Thus, it's free for us to maintain Good Life Farms aside from hosting our server, and therefore, we don't have to charge any of our users.
+
+<br>
 
 ## What we can do for you
 
@@ -32,6 +33,8 @@ We will not implement a payment processor (PayPal, Stripe, etc) on our web app b
 You can then share your web page with your fellow local consumers.
 They'll be able to see exactly the same things you see on your screen, including the name, price, and description of each item you entered on your Google Sheets.
 They'll be able to make an order through your web page by clicking the order buttons.
+
+<br>
 
 ## Who are we?
 
