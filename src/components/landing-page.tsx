@@ -43,13 +43,21 @@ export default function LandingPage() {
                 </p>
                 <div className='space-x-4'>
                   <Link
-                    className='inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-lg font-bold text-primary-4 drop-shadow-[0_8px_8px_rgba(0,0,0,1)] transition-colors hover:bg-primary-3 focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50'
+                    className='inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-lg font-bold text-primary-4 drop-shadow-[0_8px_8px_rgba(0,0,0,1)] transition-colors hover:bg-primary-3 focus:bg-primary-3/60 focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50'
                     href='/prototype'
                   >
                     Prototype
                   </Link>
                   <a
-                    className='inline-flex items-center justify-center rounded-md bg-primary/75 px-4 py-2 text-lg font-bold text-primary-4 drop-shadow-[0_8px_8px_rgba(0,0,0,0.3)] transition-colors hover:bg-primary-3/90 focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50'
+                    className='inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-lg font-bold text-primary-4 drop-shadow-[0_8px_8px_rgba(0,0,0,1)] transition-colors hover:bg-primary-3 focus:bg-primary-3/60 focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50'
+                    target='_blank'
+                    href='https://forms.gle/5m1Tr4JXqT9Thb286'
+                    rel='noopener noreferrer'
+                  >
+                    Create
+                  </a>
+                  <a
+                    className='inline-flex items-center justify-center rounded-md bg-primary/75 px-4 py-2 text-lg font-bold text-primary-4 drop-shadow-[0_8px_8px_rgba(0,0,0,0.3)] transition-colors hover:bg-primary-3/90 focus:bg-primary-3/60 focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50'
                     target='_blank'
                     href='https://github.com/soobinrho/good-life-farms/blob/main/DEVLOG.md#who-are-we'
                     rel='noopener noreferrer'

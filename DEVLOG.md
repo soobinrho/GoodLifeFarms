@@ -14,9 +14,19 @@ Thus, it's free for us to maintain Good Life Farms aside from a few dollars of s
 
 ## What we can do for you
 
-Fill out this form https://forms.gle/5m1Tr4JXqT9Thb286 and we will make a web page for you.
-You will then get an invite to a new Google Sheets, where you can enter your items.
-Everything you enter there, it will be updated in real-time in the web page we created for you.
+We are volunteers who work on this on our free time, so we can't guarentee a timeline, but we promise to complete you request you submit here no matter how long it takes...
+
+After you submit this form to us, we will create a page with a url such as this: https://GoodLifeFarms.nsustain.com/prototype
+The word "prototype" will be replaced with your desired display name you submit.
+
+We will then send you a link to your own Google Sheets.
+There, you have an option to enter the name of the item(s), their price, and their descriptions.
+Whatever you enter there, it will be reflected to your new Good Life Farms page in real time.
+Since we built our web app entirely using free services, the data update might sometimes not work.
+In that case, please refresh your page, and it will most likely work again.
+
+You can then share your web page with your shareholders.
+They'll be able to see exactly the same thing you see on your screen, and they'll be able to make an order through your web page by clicking the order button.
 
 ## Who are we?
 
