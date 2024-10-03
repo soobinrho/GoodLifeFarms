@@ -24,7 +24,7 @@ export default function HeaderGoogleSheets() {
         rel='noopener noreferrer'
       >
         <span className='text-nowrap font-extralight hover:text-primary-3/70 active:text-black/70'>
-          Open in Sheets
+          Edit in Sheets
         </span>
       </a>
     </div>
