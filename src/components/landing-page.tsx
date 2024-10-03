@@ -13,11 +13,11 @@ export default function LandingPage() {
             <div className='grid place-items-center gap-4 px-10 sm:w-[94%] md:grid-cols-2 md:gap-16'>
               <div>
                 <h1 className='lg:leading-tighter text-pretty text-start text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]'>
-                  Self-sustainable web app for{' '}
+                  Self-sustainable selling platform for{' '}
                   <TypeAnimation
                     className='font-extrabold text-primary/70'
                     sequence={[
-                      'local farms',
+                      'local farmers',
                       2000,
                       'beekeepers',
                       2000,
@@ -39,7 +39,8 @@ export default function LandingPage() {
               <div className='flex flex-col items-start space-y-4'>
                 <p className='mx-auto max-w-[700px] text-pretty text-primary-3 md:text-xl'>
                   Platform for local producers and local consumers. Designed to
-                  be as self-sustainable as possible; low maintenance; and free.
+                  be as self-sustainable and low-maintenance as possible. Made
+                  by volunteers who love the environment and sustainability.
                 </p>
                 <div className='space-x-4'>
                   <Link
