@@ -53,7 +53,12 @@ Our main aim is
 
 ## Logos
 
-[***Insert original orange puppy and tomato cat here***]
+<img src="public/orange_puppy_original.jpg"
+     width="500px"
+     alt="Orange Puppy">
+<img src="public/tomato_cat_original.jpg"
+     width="500px"
+     alt="Tomato Cat">
 
 These logos were created by our Lead Designer Norianne Batoon, whom I met in *Graphics Design* class in my last semester of college (Fall, 2024).
 The moment I saw her design (we just had learned how to use Adobe Illustrator and we were going around in turn presenting our designs), I knew I had to recruit her.
