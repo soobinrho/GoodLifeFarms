@@ -33,6 +33,12 @@ interface Inventory {
 }
 
 async function getInventory(): Promise<Inventory[]> {
+  // "`noStore` can be used to declaratively opt out of static rendering
+  // and indicate a particular Server Component should not be cached."
+  // Source:
+  //   https://nextjs.org/docs/app/api-reference/functions/unstable_noStore
+  noStore();
+
   const spreadsheet = new GoogleSpreadsheet(
     googleSheetsID_inventory,
     googleSheetsAPIAuth
@@ -52,23 +58,22 @@ async function getInventory(): Promise<Inventory[]> {
       };
     }
   }
-  spreadsheet.resetLocalCache();
   return inventory;
 }
 
 export default async function PrototypePage() {
-  // "`noStore` can be used to declaratively opt out of static rendering
-  // and indicate a particular Server Component should not be cached."
-  // Source:
-  //   https://nextjs.org/docs/app/api-reference/functions/unstable_noStore
-  noStore();
   let isError = false;
   let inventory: Inventory[] = [];
   try {
     inventory = await getInventory();
-  } catch (err) {
+  } catch (err: any) {
     isError = true;
     console.log(err);
+    if (err.response?.status === 502) {
+      console.log('[ERROR] 502 Response from getInventory()');
+    } else {
+      console.log('[ERROR] Previously unknown response from getInventory()');
+    }
   }
 
   return (
