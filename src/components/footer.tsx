@@ -10,30 +10,11 @@ export default function Footer() {
         <a
           className='font-light hover:text-primary-3/70 active:text-black/70'
           target='_blank'
-          href='https://www.linkedin.com/in/kathy-do-1b035a242/'
+          href='https://github.com/nsustain'
           rel='noopener noreferrer'
         >
-          Kathy
+          Nsustain
         </a>
-        ,{' '}
-        <a
-          className='font-light hover:text-primary-3/70 active:text-black/70'
-          target='_blank'
-          href='https://www.linkedin.com/in/oluwatobiloba-o-992772241/'
-          rel='noopener noreferrer'
-        >
-          Tobi
-        </a>
-        , and{' '}
-        <a
-          className='font-light hover:text-primary-3/70 active:text-black/70'
-          target='_blank'
-          href='https://www.linkedin.com/in/soobinrho/'
-          rel='noopener noreferrer'
-        >
-          Soobin
-        </a>
-        .
       </div>
 
       <div className='absolute bottom-0 right-0 mb-4 mr-4 font-extralight sm:mr-8'>
