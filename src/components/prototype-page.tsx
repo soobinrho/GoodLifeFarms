@@ -13,8 +13,6 @@ import { unstable_noStore as noStore } from 'next/cache';
 import Error from 'next/error';
 import React from 'react';
 
-noStore();
-
 const googleForms_order = process.env.GOOGLE_FORMS_ORDER ?? '';
 const googleSheetsID_inventory = process.env.GOOGLE_SHEETS_ID_INVENTORY ?? '';
 
@@ -59,12 +57,12 @@ async function getInventory(): Promise<Inventory[]> {
 }
 
 export default async function PrototypePage() {
-  let isError = false;
-
   // "`noStore` can be used to declaratively opt out of static rendering
   // and indicate a particular Server Component should not be cached."
   // Source:
   //   https://nextjs.org/docs/app/api-reference/functions/unstable_noStore
+  noStore();
+  let isError = false;
   let inventory: Inventory[] = [];
   try {
     inventory = await getInventory();
@@ -75,7 +73,7 @@ export default async function PrototypePage() {
 
   return (
     <>
-      {/* TODO: Use Google Forms API to dynamically assign a form.*/}
+      {/* TODO: Make a dedicated component for the table so that making a separate page for each local producer becomes scalable.*/}
       <div className='relative h-max min-h-screen overflow-y-auto bg-background'>
         {!isError ? (
           <Table className='mx-auto mb-14 mt-20 max-w-[95%]'>
