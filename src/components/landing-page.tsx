@@ -43,7 +43,7 @@ export default function LandingPage() {
                   be as self-sustainable and low-maintenance as possible. Made
                   by volunteers who love the environment and sustainability.
                 </p>
-                <div className='flex flex-col items-center space-y-4 overflow-visible text-nowrap sm:flex-row sm:space-x-4 sm:space-y-0'>
+                <div className='flex flex-col items-center space-y-4 overflow-visible text-nowrap pb-2 pt-6 sm:flex-row sm:space-x-4 sm:space-y-0 sm:pb-0 sm:pt-0'>
                   <Link
                     className='inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-lg font-bold text-primary-4 drop-shadow-[0_8px_8px_rgba(0,0,0,1)] transition-colors hover:bg-primary-3 focus:bg-primary-3/60 focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50'
                     href='/prototype'
