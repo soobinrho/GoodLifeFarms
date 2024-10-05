@@ -6,9 +6,9 @@ import PrototypePage from '@/components/prototype-page';
 
 export default function Page() {
   return (
-    <main className='relative min-h-screen w-full text-primary'>
+    <main className='relative h-max min-h-screen w-full overflow-y-hidden bg-background text-primary'>
       <HeaderGoBackToHome />
-      <HeaderGoogleSheets/>
+      <HeaderGoogleSheets />
       <HeaderSocialMedia />
       <PrototypePage />
       <Footer />
