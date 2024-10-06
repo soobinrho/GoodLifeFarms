@@ -18,13 +18,13 @@ const nextConfig = {
               style-src 'self' 'sha256-RpGvlRbRQPlLZDBLDKCjN1VY9+ac/RHqgjmDHc2Y6PA=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU='; \
               font-src 'self' https://fonts.googleapis.com; \
               worker-src 'self' blob:; \
-              base-uri 'self'; \
+              base-uri 'none'; \
               form-action 'self'; \
               manifest-src 'self'; \
               object-src 'none'; \
               child-src blob:; \
               connect-src 'self'; \
-              script-src 'self' 'unsafe-inline' 'unsafe-eval';",
+              script-src 'self' 'unsafe-inline' 'unsafe-eval' http: https:;",
           },
           {
             key: 'X-Content-Type-Options',
