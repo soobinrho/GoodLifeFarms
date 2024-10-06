@@ -9,7 +9,8 @@ const description = 'Creating self-sustainable platform for local producers.';
 const url = 'https://github.com/soobinrho/good-life-farms';
 const category = 'Vegetables';
 const keywords = ['good life farms', 'self-sustainable farm'];
-const images = 'https://opengraph.githubassets.com/1e6735c3a867f91324705ce1701f44ad153a85555826c48cf9d8ff50c4ff3de1/soobinrho/good-life-farms';
+const images =
+  'https://opengraph.githubassets.com/1e6735c3a867f91324705ce1701f44ad153a85555826c48cf9d8ff50c4ff3de1/soobinrho/good-life-farms';
 const authors = 'Tobi, Kathy, and Soobin';
 
 export const metadata: Metadata = {
@@ -67,7 +68,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={`${inter.className} antialased`}>{children}</body>
+      <body className={`${inter.className} antialased text-sm sm:text-base`}>
+        {children}
+      </body>
     </html>
   );
 }

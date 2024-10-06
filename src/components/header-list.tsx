@@ -17,7 +17,7 @@ export default function HeaderList() {
         </svg>
       </Link>
       <Link href='/list'>
-        <span className='text-nowrap font-extralight hover:text-primary-3/70 active:text-black/70'>
+        <span className='text-nowrap text-base font-extralight hover:text-primary-3/70 active:text-black/70'>
           List
         </span>
       </Link>

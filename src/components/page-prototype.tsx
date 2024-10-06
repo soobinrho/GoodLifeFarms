@@ -95,7 +95,7 @@ export default async function PrototypePage() {
                   <TableRow key={row.index}>
                     <TableCell className='font-medium'>
                       <a
-                        className='w-max whitespace-nowrap rounded-md bg-primary/75 px-4 py-2 text-lg text-primary-4 drop-shadow-[0_8px_8px_rgba(0,0,0,0.3)] transition-colors hover:bg-primary-3/90 focus:bg-primary-3/60 focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50'
+                        className='w-max whitespace-nowrap rounded-md bg-primary/75 px-2 py-1 text-sm text-primary-4 drop-shadow-[0_8px_8px_rgba(0,0,0,0.3)] transition-colors hover:bg-primary-3/90 focus:bg-primary-3/60 focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50 sm:text-lg'
                         target='_blank'
                         href={googleForms_order + row.produce}
                         rel='noopener noreferrer'
