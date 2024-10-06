@@ -25,7 +25,7 @@ export default async function ListPage() {
             <TableRow key='0'>
               <TableCell className='font-medium'>
                 <Link
-                  className='w-max whitespace-nowrap rounded-md bg-primary/75 px-4 py-2 text-lg text-primary-4 drop-shadow-[0_8px_8px_rgba(0,0,0,0.3)] transition-colors hover:bg-primary-3/90 focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50'
+                  className='w-max whitespace-nowrap rounded-md bg-primary/75 px-4 py-2 text-lg text-primary-4 drop-shadow-[0_8px_8px_rgba(0,0,0,0.3)] transition-colors hover:bg-primary-3/90 focus:bg-primary-3/60 focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50'
                   href='/list/prototype'
                 >
                   Prototype
