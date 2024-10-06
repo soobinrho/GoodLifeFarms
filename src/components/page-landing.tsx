@@ -14,7 +14,7 @@ export default function LandingPage() {
         <div className='container w-screen space-y-10 xl:space-y-16'>
           <div className='grid place-items-center gap-4 px-10 sm:w-[94%] md:grid-cols-2 md:gap-16'>
             <div>
-              <h1 className='lg:leading-tighter text-pretty text-start text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]'>
+              <h1 className='lg:leading-tighter text-pretty text-start text-xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]'>
                 Self-sustainable selling platform for{' '}
                 <TypeAnimation
                   className='font-extrabold text-primary/70'
@@ -39,20 +39,20 @@ export default function LandingPage() {
               </h1>
             </div>
             <div className='flex flex-col flex-wrap items-center space-y-4 sm:items-start'>
-              <p className='mx-auto max-w-fit text-pretty text-primary-3 md:text-xl'>
+              <p className='mx-auto max-w-fit text-pretty text-sm text-primary-3 sm:text-xl'>
                 Platform for local producers and local consumers. Designed to be
                 as self-sustainable and low-maintenance as possible. Made by
                 volunteers who love the environment and sustainability.
               </p>
               <div className='flex flex-col items-center space-y-4 overflow-visible text-nowrap pb-2 pt-6 sm:flex-row sm:space-x-4 sm:space-y-0 sm:pb-0 sm:pt-0'>
                 <Link
-                  className='inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-lg font-bold text-primary-4 drop-shadow-[0_8px_8px_rgba(0,0,0,1)] transition-colors hover:bg-primary-3 focus:bg-primary-3/60 focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50'
-                  href='/prototype'
+                  className='inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-bold text-primary-4 drop-shadow-[0_8px_8px_rgba(0,0,0,1)] transition-colors hover:bg-primary-3 focus:bg-primary-3/60 focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50 sm:text-lg'
+                  href='/list/prototype'
                 >
                   Prototype
                 </Link>
                 <a
-                  className='inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-lg font-bold text-primary-4 drop-shadow-[0_8px_8px_rgba(0,0,0,1)] transition-colors hover:bg-primary-3 focus:bg-primary-3/60 focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50'
+                  className='inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-bold text-primary-4 drop-shadow-[0_8px_8px_rgba(0,0,0,1)] transition-colors hover:bg-primary-3 focus:bg-primary-3/60 focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50 sm:text-lg'
                   target='_blank'
                   href='https://forms.gle/5m1Tr4JXqT9Thb286'
                   rel='noopener noreferrer'
@@ -60,7 +60,7 @@ export default function LandingPage() {
                   Create
                 </a>
                 <a
-                  className='inline-flex items-center justify-center rounded-md bg-primary/75 px-4 py-2 text-lg font-bold text-primary-4 drop-shadow-[0_8px_8px_rgba(0,0,0,0.3)] transition-colors hover:bg-primary-3/90 focus:bg-primary-3/60 focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50'
+                  className='inline-flex items-center justify-center rounded-md bg-primary/75 px-4 py-2 text-sm font-bold text-primary-4 drop-shadow-[0_8px_8px_rgba(0,0,0,0.3)] transition-colors hover:bg-primary-3/90 focus:bg-primary-3/60 focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50 sm:text-lg'
                   target='_blank'
                   href='https://github.com/soobinrho/good-life-farms/blob/main/DEVLOG.md'
                   rel='noopener noreferrer'

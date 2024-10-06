@@ -1,6 +1,6 @@
 import Footer from '@/components/footer';
 import HeaderSocialMedia from '@/components/header-social-media';
-import LandingPage from '@/components/landing-page';
+import LandingPage from '@/components/page-landing';
 
 export default function Home() {
   return (
