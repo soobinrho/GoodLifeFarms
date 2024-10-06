@@ -33,12 +33,6 @@ interface Inventory {
 }
 
 async function getInventory(): Promise<Inventory[]> {
-  // "`noStore` can be used to declaratively opt out of static rendering
-  // and indicate a particular Server Component should not be cached."
-  // Source:
-  //   https://nextjs.org/docs/app/api-reference/functions/unstable_noStore
-  noStore();
-
   const spreadsheet = new GoogleSpreadsheet(
     googleSheetsID_inventory,
     googleSheetsAPIAuth
