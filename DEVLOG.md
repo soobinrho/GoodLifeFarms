@@ -17,7 +17,7 @@ Thus, it's free for us to maintain Good Life Farms aside from hosting our server
 We are volunteers who love the environment and sustainability, and we believe helping local producers and local consumers thrive is one of the best ways we can actually make an impact on environmental sustainability.
 We work on this in our free time, so we can't guarantee a timeline, but we can definitely promise to complete the request you submit here.
 
-After you submit this form to us, we will create a page at Good Life Farms, which will have a url like this: https://GoodLifeFarms.nsustain.com/prototype
+After you submit this form to us, we will create a page at Good Life Farms, which will have a url like this: https://GoodLifeFarms.nsustain.com/list/prototype
 The word "prototype" will be replaced with your desired display name you submit.
 
 We will then send you an invite to your own Google Sheets.
