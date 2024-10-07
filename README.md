@@ -28,7 +28,7 @@ pnpm dev
 
 <br>
 
-## Who are we?
+## Dev Log
 
 https://github.com/soobinrho/GoodLifeFarms/blob/main/DEVLOG.md
 
