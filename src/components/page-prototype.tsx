@@ -119,9 +119,9 @@ export default async function PrototypePage() {
               <div className='relative mx-4 my-16 whitespace-break-spaces rounded-md bg-slate-300/95 p-4'>
                 <p className='font-black'>ERROR</p>
                 <p className='font-light'>
-                  We have a limit of 300 reads per minute because we're using
-                  Google's free Spreadsheet APIs. Please refresh this page and
-                  try again. We built this web app entirely using free services
+                  Please refresh this page and try again. We have a limit of 300
+                  reads per minute because we're using Google's free Spreadsheet
+                  APIs. We built this web app entirely using free services
                   without any dedicated database of our own to minimize
                   maintenance cost and therefore provide this web app for free
                   for all local producers. If you would like to see how we built
