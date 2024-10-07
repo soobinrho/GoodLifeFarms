@@ -3,7 +3,7 @@
 
 ## Overview
 
-We're trying to make a web app for all local producers who need one, and to do so in a way that is sustainable and as low-maintenance as possible.
+We're trying to make a low-maintenance selling platform for all local producers who need one, and to do so in a way that is the most self-sustainable possible.
 
 Our goal is to (a) make our web app as self-sustainable as possible -- i.e. zero maintenance cost if possible by using free API's (Google Sheets API and Google Forms API), and (b) design the web app specifically for local producers' use cases: UI suitable for field use.
 
