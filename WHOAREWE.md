@@ -58,9 +58,9 @@ Eight months later, we met Norianne and recruited her to be our Lead Designer.
      width="500px"
      alt="Tomato Cat">
 
-These logos were created by our Lead Designer Norianne Batoon, whom I met in *Graphics Design* class in my last semester of college (Fall, 2024).
-The moment I saw her design (we just had learned how to use Adobe Illustrator and we were going around in turn presenting our designs), I knew I had to recruit her.
-She was the perfect designer for our project because (a) Dr. G has a lot of farm cats, so I tried making a cat logo but could not because making a logo is too difficult for me, and (b) Norianne's design consists of cats and puppies; and veggie and fruit at the same time, which are exactly the two things that Good Life Farms needs in a logo.
+These logos were created by our Lead Designer Norianne Batoon, whom Soobin met in *Graphics Design* class in his last semester of college (Fall, 2024).
+The moment we saw her design (we just had learned how to use Adobe Illustrator and we were going around in turn presenting our designs), we knew we had to recruit her.
+She was the perfect designer for our project because (a) Dr. G has a lot of farm cats, so Soobin tried making a cat logo but could not because making a logo was too difficult for him, and (b) Norianne's design consists of cats and puppies; and veggie and fruit at the same time, which are exactly the two things that Good Life Farms needs in a logo.
 
 [***Insert the final version of the logo here***]
 
