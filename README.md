@@ -14,7 +14,7 @@ All your local consumers will be able to see your real-time inventory and make a
 
 <br>
 
-## Getting Started
+## (Developers) Getting Started
 
 ```bash
 # Prerequisites
@@ -28,7 +28,7 @@ pnpm dev
 
 <br>
 
-## Dev Log
+## Who are we?
 
 https://github.com/soobinrho/GoodLifeFarms/blob/main/DEVLOG.md
 
