@@ -62,7 +62,7 @@ export default function LandingPage() {
                 <a
                   className='inline-flex items-center justify-center rounded-md bg-primary/75 px-4 py-2 text-sm font-bold text-primary-4 drop-shadow-[0_8px_8px_rgba(0,0,0,0.3)] transition-colors hover:bg-primary-3/90 focus:bg-primary-3/60 focus-visible:ring-1 active:ring-2 disabled:pointer-events-none disabled:opacity-50 sm:text-lg'
                   target='_blank'
-                  href='https://github.com/soobinrho/good-life-farms/blob/main/DEVLOG.md'
+                  href='https://github.com/soobinrho/good-life-farms/blob/main/WHOAREWE.md'
                   rel='noopener noreferrer'
                 >
                   Who are we?

@@ -33,3 +33,9 @@ pnpm dev
 https://github.com/soobinrho/GoodLifeFarms/blob/main/DEVLOG.md
 
 <br>
+
+## Who are we?
+
+https://github.com/soobinrho/GoodLifeFarms/blob/main/WHOAREWE.md
+
+<br>
