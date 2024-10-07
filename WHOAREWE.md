@@ -40,12 +40,12 @@ They'll be able to make an order through your web page by clicking the order but
 
 ## Who are we?
 
-We are Kathy, Tobi, and Soobin (and later we recruited Norianne to be our Lead Designer).
-We met at Stanford TreeHacks, in which we created self-sustainable web app for local producers (farmers, beekeepers, and so on).
-
 It was in 2023 when we met Dr. Gubbels, Biology professor at Augustana University, who has a farm in Canton with her husband.
 She calls it Good Life Farms.
 She told us, "it would be great to have an app for our shareholders," and that's how this project started.
+
+Soobin then met Kathy and Tobi at 2024 Standford Hackathon (TreeHacks) and created the first version of Good Life Farms.
+Eight months later, we met Norianne and recruited her to be our Lead Designer.
 
 <br>
 
