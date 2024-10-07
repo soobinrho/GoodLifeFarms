@@ -23,7 +23,7 @@ After you submit this form to us, we will create a page at Good Life Farms, whic
 The word "prototype" will be replaced with your desired display name you submit.
 
 We will then send you an invite to your own Google Sheets.
-This is how you'll be able to edit what's going to be shown on your page that we will have created for you.
+This is how you'll be able to edit what's going to be shown on your page that we will create for you.
 There, you have an option to enter the name of the item(s), their price, and their description.
 Whatever you enter there, it will be shown to your new Good Life Farms page in real time.
 Since we built our web app entirely using free services, the data update might sometimes be sluggish.
