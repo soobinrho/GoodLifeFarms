@@ -9,6 +9,8 @@ We avoid fancy, expensive technology at all costs, and in fact, we provide our v
 To achieve this, we didn't use any dedicated database or cloud infrastructure services to build our web app because they're expensive to maintain.
 Instead, our web app is built solely using free services provided by Google (Sheets, Forms, etc).
 Thus, it's free for us to maintain Good Life Farms aside from hosting our server, and therefore, we don't have to charge any of our users.
+We envision to be Vercel for local producers -- providing a completely free service to anyone who needs it.
+If you need millions or billions of rows of data that cannot be handled effectively by our existing, free Google Sheets back-end infrastructure, then you can migrate to proprietary services like Shopify.
 
 <br>
 
@@ -41,13 +43,9 @@ They'll be able to make an order through your web page by clicking the order but
 We are Kathy, Tobi, and Soobin (and later we recruited Norianne to be our Lead Designer).
 We met at Stanford TreeHacks, in which we created self-sustainable web app for local producers (farmers, beekeepers, and so on).
 
-Right now, our website just shows a prototype, but in the far future hopefully, we envision to have a "create your own web app for your local farm" button which can create this web app for any local producers who needs their own web app to sell their produces -- a dedicated, low-maintenance platform for each and every local producer who needs one.
-We envision to be Vercel for local producers -- providing a completely free service to anyone who needs it, and if you need millions or billions of rows of data that cannot be handled effectively by our existing, free Google Sheets back-end infrastructure, then you can migrate to proprietary services like Shopify.
-
-Our main aim is
-
-- (a) to make it as self-sustainable as possible by making it zero-maintenance cost (we did it by getting rid of databases and just using Google Sheets API's which are completely free) so that the local producers don't have to pay a dime in order to have their own dedicated platform, and
-- (b) to make it as UI/UX friendly as possible so that they can use it in the field without having to come back indoors and sit in front of their computers. We built it such that basically we give you an access to Google Sheets document, and whatever you edit there (name of the produce and quantity and notes) gets automatically listed on the web app. So, the only thing the farmer has to do is just type in whatever they have (name / quantity / notes) on a Google Sheet!
+It was in 2023 when we met Dr. Gubbels, Biology professor at Augustana University, who has a farm in Canton with her husband.
+She calls it Good Life Farms.
+She told us, "it would be great to have an app for our shareholders," and that's how this project started.
 
 <br>
 
