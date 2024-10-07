@@ -3,7 +3,7 @@
 ## What we are not
 
 We are not a marketplace app like Ebay or Amazon.
-We make a single web page for each local producer with the aim of making it as self-sustainable and low-maintenance as possible.
+We make a single web-page platform for each local producer with the aim of making it as self-sustainable and low-maintenance as possible.
 
 We avoid fancy, expensive technology at all costs, and in fact, we provide our volunteering service for free for all local producers.
 To achieve this, we didn't use any dedicated database or cloud infrastructure services to build our web app because they're expensive to maintain.
