@@ -9,7 +9,7 @@
   </a>
 </p>
 
-## Overview
+## Purpose
 
 We're trying to make a self-sustainable selling platform for all local producers who need one.
 
