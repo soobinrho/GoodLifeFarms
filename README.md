@@ -22,7 +22,19 @@ All your local consumers will be able to see your real-time inventory and make a
 
 <br>
 
-## (Developers) Getting Started
+## Who are we?
+
+https://github.com/soobinrho/GoodLifeFarms/blob/main/WHOAREWE.md
+
+<br>
+
+## Dev Log
+
+https://github.com/soobinrho/GoodLifeFarms/blob/main/DEVLOG.md
+
+<br>
+
+## How to Run a Development Server
 
 ```bash
 # Prerequisites
@@ -36,14 +48,3 @@ pnpm dev
 
 <br>
 
-## Dev Log
-
-https://github.com/soobinrho/GoodLifeFarms/blob/main/DEVLOG.md
-
-<br>
-
-## Who are we?
-
-https://github.com/soobinrho/GoodLifeFarms/blob/main/WHOAREWE.md
-
-<br>
