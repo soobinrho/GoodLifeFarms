@@ -1,6 +1,7 @@
 'use client';
 
 import HeaderList from '@/components/header-list';
+import HeaderLogo from '@/components/header-logo';
 import Link from 'next/link';
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
@@ -8,6 +9,7 @@ import { TypeAnimation } from 'react-type-animation';
 export default function LandingPage() {
   return (
     <>
+      <HeaderLogo />
       <HeaderList />
       {/* Who we are */}
       <section className='absolute left-[50%] top-[40%] z-10 translate-x-[-50%] translate-y-[-40%] sm:top-[50%] sm:translate-y-[-50%]'>
