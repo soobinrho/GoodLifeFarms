@@ -1,6 +1,14 @@
 <br>
 <br>
 
+<p align="center">
+  <a href="https://GoodLifeFarms.nsustain.com/">
+  <img src="public/2024-10-11_banner.png"
+       width="500px"
+       alt="Orange Puppy and Tomato Cat.">
+  </a>
+</p>
+
 ## Overview
 
 We're trying to make a self-sustainable selling platform for all local producers who need one.
