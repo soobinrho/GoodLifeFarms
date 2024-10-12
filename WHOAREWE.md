@@ -62,8 +62,12 @@ These logos were created by Norianne Batoon, whom Soobin met in *Graphics Design
 The moment we saw her design (we just had learned how to use Adobe Illustrator and we were going around in turn presenting our designs), we knew we had to recruit her.
 She was the perfect logo designer for our project because (a) Dr. G has a lot of farm cats, so Soobin tried making a cat logo but could not because making a logo was too difficult for him, and (b) Norianne's design consists of cats and puppies; and veggie and fruit at the same time, which are exactly the two things that Good Life Farms needs in a logo.
 
-[***Insert the final version of the logo here***]
+<img src="public/orange_puppy_original.jpg"
+     width="500px"
+     alt="Orange Puppy">
 
-This is the final version of the logo she created with the help of Professor Izia Lindsay, and is also what you will see when you go to https://GoodLifeFarms.nsustain.com
+These are the final versions of the logo she created with the help of Professor Izia Lindsay, and is also what you will see when you go to https://GoodLifeFarms.nsustain.com
+
+Adobe Illustrator files: https://github.com/soobinrho/GoodLifeFarms-assets/tree/main/designs
 
 <br>
