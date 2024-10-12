@@ -58,11 +58,6 @@ cp components/... ...
 # TODO: Delete this comment once documentation is complete.
 # For real local producers page, top center = local producer name.
 # Edit in Sheets is needed only in the prototype page.
-
-# TODO: Components should be refactored. Page-specific implementations
-# should be written inside page/ directory .tsx files, not in components.
-# Components should be re-usable by multiple page entities.
 ```
-
 
 <br>
