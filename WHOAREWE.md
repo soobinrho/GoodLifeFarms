@@ -1,4 +1,15 @@
 <br>
+<br>
+
+<p align="center">
+  <a href="https://GoodLifeFarms.nsustain.com/">
+  <img src="public/2024-10-11_banner.png"
+       width="500px"
+       alt="Orange Puppy and Tomato Cat.">
+  </a>
+</p>
+
+<br>
 
 ## What we are not
 
@@ -58,7 +69,7 @@ Eight months later, we met Norianne and recruited her to design our logo.
      width="500px"
      alt="Tomato Cat">
 
-These logos were created by Norianne Batoon, whom Soobin met in *Graphics Design* class in his last semester of college (Fall, 2024).
+These logos were created by Norianne Batoon, whom Soobin met in _Graphics Design_ class in his last semester of college (Fall, 2024).
 The moment we saw her design (we just had learned how to use Adobe Illustrator and we were going around in turn presenting our designs), we knew we had to recruit her.
 She was the perfect logo designer for our project because (a) Dr. G has a lot of farm cats, so Soobin tried making a cat logo but could not because making a logo was too difficult for him, and (b) Norianne's design consists of cats and puppies; and veggie and fruit at the same time, which are exactly the two things that Good Life Farms needs in a logo.
 

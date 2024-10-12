@@ -1,4 +1,15 @@
 <br>
+<br>
+
+<p align="center">
+  <a href="https://GoodLifeFarms.nsustain.com/">
+  <img src="public/2024-10-11_banner.png"
+       width="500px"
+       alt="Orange Puppy and Tomato Cat.">
+  </a>
+</p>
+
+<br>
 
 ## 2024-02-16
 
