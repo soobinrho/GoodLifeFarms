@@ -13,7 +13,7 @@
 
 ## Purpose
 
-We're trying to make a self-sustainable selling platform for all local producers who need one.
+A self-sustainable platform for local producers and local consumers.
 
 Our goal is to (a) make our web app as self-sustainable as possible -- i.e. zero maintenance cost by using free API's offered by big technology companies, and (b) specifically to implement the design such that it's easy for local producers to use in the field.
 
