@@ -5,10 +5,17 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 const title = 'Good Life Farms';
-const description = 'Self-sustainable platform for local producers and local consumers.';
+const description =
+  'Self-sustainable platform for local producers and local consumers.';
 const url = 'https://github.com/soobinrho/GoodLifeFarms';
 const category = 'Vegetables';
-const keywords = ['good life farms', 'self-sustainable', 'selling', 'local producers', 'local consumers'];
+const keywords = [
+  'good life farms',
+  'self-sustainable',
+  'selling',
+  'local producers',
+  'local consumers',
+];
 const images =
   'https://repository-images.githubusercontent.com/758805409/3abfde88-4dd5-42eb-aa2c-2394a1072462';
 const authors = 'Nsustain';
@@ -32,7 +39,6 @@ export const metadata: Metadata = {
     description: description,
     images: images,
   },
-  //   manifest: '/manifest.json',
   icons: {
     icon: '/favicon.svg',
     shortcut: '/favicon.png',
