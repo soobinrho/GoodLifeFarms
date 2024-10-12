@@ -38,27 +38,33 @@ async function getInventory(): Promise<Inventory[]> {
     googleSheetsAPIAuth
   );
 
-  try {
-    await spreadsheet.loadInfo();
-  } catch (err: any) {
-    console.log(err);
-    if (err.response?.status === 502) {
-      // Google Spreadsheet API can sometimes return 502.
-      // The best available solution yet is to retry.
-      // Source:
-      //   https://stackoverflow.com/a/79045600
-      const SHEETS_API_RETRY_MAX = 2;
-      for (let i = 0; i < SHEETS_API_RETRY_MAX; i++) {
+  // Google Spreadsheet API can sometimes return 502.
+  // The best available solution yet is to retry.
+  // Source:
+  //   https://stackoverflow.com/a/79045600
+  const SHEETS_API_RETRY_MAX = 3;
+  for (let i = 0; i < SHEETS_API_RETRY_MAX; i++) {
+    try {
+      await spreadsheet.loadInfo();
+
+      // Break out of the retry loop if the loading works without error.
+      break;
+    } catch (err: any) {
+      console.log(err);
+      if (err.response?.status === 502) {
         console.log(
           `[ERROR] 502 error from getInventory(). Retry attempt ${i}`
         );
-        await spreadsheet.loadInfo();
-        await setTimeout(100 * (i + 1));
+        if (i !== SHEETS_API_RETRY_MAX - 1) {
+          await setTimeout(100 * i);
+        } else {
+          console.log('[ERROR] RETRY_MAX reached. Aborting.');
+          throw err;
+        }
+      } else {
+        console.log('[ERROR] Unknown error from getInventory().');
+        throw err;
       }
-    } else {
-      console.log('[ERROR] Previously unknown response from getInventory()');
-      throw err;
-      // TODO: test how to catch this in the main function
     }
   }
 
