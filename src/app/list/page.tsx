@@ -2,7 +2,6 @@ import Footer from '@/components/footer';
 import HeaderCreate from '@/components/header-create';
 import HeaderLogo from '@/components/header-logo';
 import HeaderSocialMedia from '@/components/header-social-media';
-import ListPage from '@/components/page-list';
 import {
   Table,
   TableBody,
@@ -42,10 +41,10 @@ export default function Home() {
                   </Link>
                 </TableCell>
                 <TableCell>
-                  2001 S Summit Ave. Sioux Falls. SD 57197. This is an example
-                  local producer. Click the "Create" button above to request for
-                  your own page. After you submit the form, volunteers will get
-                  in touch with you.
+                  Street address, city, state, and ZIP code. This is an example.
+                  If you're a local producer, you can click the "Create" button
+                  above to request for your own page. After you submit the form,
+                  volunteers will get in touch with you.
                 </TableCell>
               </TableRow>
             </TableBody>
