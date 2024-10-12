@@ -5,7 +5,18 @@ import Link from 'next/link';
 export default function Footer() {
   return (
     <>
-      <div className='absolute bottom-0 mb-4 ml-3 text-nowrap font-extralight'>
+      <div className='invisible absolute bottom-0 mb-4 ml-3 text-nowrap font-extralight sm:visible'>
+        Made with ❤ by volunteer developers at{' '}
+        <a
+          className='font-light hover:text-primary-3/70 active:text-black/70'
+          target='_blank'
+          href='https://github.com/nsustain'
+          rel='noopener noreferrer'
+        >
+          Nsustain
+        </a>
+      </div>
+      <div className='visible absolute bottom-0 mb-4 ml-3 text-nowrap font-extralight sm:invisible'>
         Made with ❤ by{' '}
         <a
           className='font-light hover:text-primary-3/70 active:text-black/70'

@@ -43,3 +43,26 @@ After 36 hours of sleepless nights at TreeHacks, we finished our prototype!
 <img src="https://github.com/soobinrho/good-life-farms/assets/19341857/d2012e65-0a2f-42e0-8a8c-e7d3b3ea479b" width="500px"> <br>
 
 <br>
+
+## 2024-10-12
+
+### Procedures for Adding a New Local Producer
+
+```bash
+# TODO: Document procedures with local producers.
+# It will be nice to have as much of this automated as possible.
+# Maybe, start as a bash script and scale up?
+cd GoodLifeFarms/src
+cp components/... ...
+
+# TODO: Delete this comment once documentation is complete.
+# For real local producers page, top center = local producer name.
+# Edit in Sheets is needed only in the prototype page.
+
+# TODO: Components should be refactored. Page-specific implementations
+# should be written inside page/ directory .tsx files, not in components.
+# Components should be re-usable by multiple page entities.
+```
+
+
+<br>
