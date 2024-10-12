@@ -21,7 +21,7 @@ To achieve this, we didn't use any dedicated database or cloud infrastructure se
 Instead, our web app is built solely using free services provided by Google (Sheets, Forms, etc).
 Thus, it's free for us to maintain Good Life Farms aside from hosting our server, and therefore, we don't have to charge any of our users.
 We envision to be Linux for local producers -- providing a completely free service to anyone who needs it and having the open-source philosophy at its core (MIT License).
-If you need millions or billions of rows of data that cannot be handled effectively by our existing, free Google Sheets back-end infrastructure, then you can migrate to proprietary services like Shopify.
+If you need features that cannot be implemented effectively by Good Life Farms, you can migrate to proprietary services like Shopify.
 
 <br>
 
