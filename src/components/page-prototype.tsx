@@ -11,6 +11,7 @@ import { JWT } from 'google-auth-library';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 import Error from 'next/error';
 import React from 'react';
+import { setTimeout } from 'timers/promises';
 
 const googleForms_order = process.env.GOOGLE_FORMS_ORDER ?? '';
 const googleSheetsID_inventory = process.env.GOOGLE_SHEETS_ID_INVENTORY ?? '';
@@ -36,10 +37,33 @@ async function getInventory(): Promise<Inventory[]> {
     googleSheetsID_inventory,
     googleSheetsAPIAuth
   );
-  await spreadsheet.loadInfo();
+
+  try {
+    await spreadsheet.loadInfo();
+  } catch (err: any) {
+    console.log(err);
+    if (err.response?.status === 502) {
+      // Google Spreadsheet API can sometimes return 502.
+      // The best available solution yet is to retry.
+      // Source:
+      //   https://stackoverflow.com/a/79045600
+      const SHEETS_API_RETRY_MAX = 2;
+      for (let i = 0; i < SHEETS_API_RETRY_MAX; i++) {
+        console.log(
+          `[ERROR] 502 error from getInventory(). Retry attempt ${i}`
+        );
+        await spreadsheet.loadInfo();
+        await setTimeout(100 * (i + 1));
+      }
+    } else {
+      console.log('[ERROR] Previously unknown response from getInventory()');
+      throw err;
+      // TODO: test how to catch this in the main function
+    }
+  }
+
   const sheet = spreadsheet.sheetsByIndex[0];
   const rows = await sheet.getRows();
-
   let inventory: Inventory[] = [];
   for (let i = 0; i < rows.length; i++) {
     if (rows[i].get('Produce')) {
@@ -51,6 +75,7 @@ async function getInventory(): Promise<Inventory[]> {
       };
     }
   }
+
   return inventory;
 }
 
@@ -59,14 +84,8 @@ export default async function PrototypePage() {
   let inventory: Inventory[] = [];
   try {
     inventory = await getInventory();
-  } catch (err: any) {
+  } catch {
     isError = true;
-    console.log(err);
-    if (err.response?.status === 502) {
-      console.log('[ERROR] 502 Response from getInventory()');
-    } else {
-      console.log('[ERROR] Previously unknown response from getInventory()');
-    }
   }
 
   return (
