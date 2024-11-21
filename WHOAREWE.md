@@ -51,7 +51,7 @@ They'll be able to make an order through your web page by clicking the order but
 
 ## Who are we?
 
-It was in 2023 when we met Dr. Gubbels, Biology professor at Augustana University, who has a farm in Canton with her husband.
+It was in 2023 when we (Mariam and Soobin) met Dr. Gubbels, Biology professor at Augustana University, who has a farm in Canton with her husband.
 She calls it Good Life Farms.
 She told us, "it would be great to have an app for our shareholders," and that's how this project started.
 
