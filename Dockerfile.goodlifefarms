@@ -1,4 +1,4 @@
-FROM node AS base
+FROM node:lts-alpine3.23 AS base
 
 LABEL com.beemovr.description="https://github.com/soobinrho/GoodLifeFarms"
 LABEL com.beemovr.maintainer="Soobin Rho <soobin@nsustain.com>"
