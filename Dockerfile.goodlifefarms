@@ -1,11 +1,11 @@
-FROM node:lts-alpine3.23 AS base
+FROM ghcr.io/pnpm/pnpm:11 AS base
 
 LABEL com.beemovr.description="https://github.com/soobinrho/GoodLifeFarms"
 LABEL com.beemovr.maintainer="Soobin Rho <soobin@nsustain.com>"
 
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
-RUN corepack enable
+RUN pnpm runtime set node 22 -g
 
 # ---------------------------------------------------------------------
 # Install dependencies.
